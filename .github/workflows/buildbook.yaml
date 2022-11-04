@@ -26,6 +26,7 @@ jobs:
         environment-file: environment.yml
         python-version: ${{ matrix.python-version }}
         auto-activate-base: false
+        auto-update-conda: false
     - name: Install local ipfs node
       run: |
         sudo apt-get update
