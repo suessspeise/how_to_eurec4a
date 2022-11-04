@@ -16,14 +16,12 @@ jobs:
       IPFSSPEC_GATEWAYS: "http://127.0.0.1:8080"
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
+    - uses: actions/checkout@v3
     - name: Set up Python modules with conda
       uses: conda-incubator/setup-miniconda@v2
       with:
+        channels: conda-forge
+        mamba-version: "*"
         activate-environment: how_to_eurec4a
         environment-file: environment.yml
         python-version: ${{ matrix.python-version }}
