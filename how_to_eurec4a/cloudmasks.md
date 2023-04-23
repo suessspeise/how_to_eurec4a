@@ -546,7 +546,7 @@ Distributions:
 
 +++
 
-## Camapign mean cloud cover
+## Campaign mean cloud cover
 * from all available data including the transfer flights
 
 ```{code-cell} ipython3
