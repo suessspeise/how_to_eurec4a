@@ -106,7 +106,7 @@ for d, dataset in enumerate(datasets):
     try:
         ds = icon_les_cat[dataset].to_dask()
         dataset_len = len(ds.time)
-        ds = ds.isel(time=slice(0,dataset_len,dataset_len//1000+1))  # select max 1000 timesteps
+        ds = ds.isel(time=slice(0,dataset_len,dataset_len//100+1))  # select max 100 timesteps
         axs[d].vlines(ds.time.values, 0, 1)
     except (FileNotFoundError, PathNotFoundError):
         pass
