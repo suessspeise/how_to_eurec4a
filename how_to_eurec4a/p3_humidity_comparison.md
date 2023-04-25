@@ -45,7 +45,7 @@ rhs = xr.Dataset({"press" :fl["press"],
                   "alt"   :fl["alt"],
                   "rh_p3" :fl["RH"],
                   "rh_iso":pi["rh_iso"]})
-rhs = rhs.where(rhs.alt > 80., drop = True)
+rhs = rhs.where(rhs.alt.values > 80., drop = True)
 ```
 
 Adriana Bailey from NCAR, who was responsible for the isotope analyzer, finds
