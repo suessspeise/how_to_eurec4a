@@ -10,6 +10,8 @@ kernelspec:
   display_name: Python 3
   language: python
   name: python3
+execution:
+  timeout: 600
 ---
 
 # interactive HALO tracks
