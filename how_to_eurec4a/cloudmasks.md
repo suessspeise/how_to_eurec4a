@@ -74,9 +74,9 @@ def ensure_cfminmax(ds):
         ds = ds.assign(CF_min=cfmin)
     if "CF_max" not in ds:
         ds = ds.assign(CF_max=cfmax)
-    ds.CF_min.load()
-    ds.CF_max.load()
-    return correct_VELOX(ds)
+    #ds.CF_min.load()
+    #ds.CF_max.load()
+    return ds
 
 from multiprocessing.pool import ThreadPool
 
