@@ -1,7 +1,3 @@
----
-myst:
-  myst_heading_anchors = 2
----
 # The issue with netCDF data types
 
 ```{admonition} TL; DR
