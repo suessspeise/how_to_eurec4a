@@ -1,3 +1,7 @@
+---
+myst:
+  myst_heading_anchors = 2
+---
 # running How to EUREC4A locally
 
 There are multiple options to run the Code examples from this book locally.
