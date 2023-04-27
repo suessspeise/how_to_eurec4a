@@ -135,7 +135,7 @@ Let's see if we can add all the flights and provide a layer switcher so that we 
 ```{code-cell} ipython3
 def get_dataset(flight_id):
     ds = cat.HALO.BAHAMAS.PositionAttitude[flight_id].to_dask()
-    return flight_id, ds[['lat','lon']].load()
+    return ds[['lat','lon']].load()
 
 full_tracks = {k: get_dataset(k) for k in cat.HALO.BAHAMAS.PositionAttitude}
 ```
